@@ -45,6 +45,24 @@
         </div>
     </div>
 
+    <div class="button-group d-flex align-items-center gap-2">
+     <!-- Tombol Login -->
+        <button id="btnLoginNav" onclick="openLoginModal()" class="btn btn-outline-primary btn-modern px-3 py-2">
+        🔑 Login
+        </button>
+    
+    <!-- Tombol Upload (Disembunyikan secara default) -->
+        <label id="btnUploadSql" for="sqlUpload" class="btn btn-primary btn-modern px-4 py-2 mb-0" style="display: none;">
+            <i class="bi bi-upload"></i> Upload SQL
+        </label>
+            <input type="file" id="sqlUpload" accept=".sql,.txt" style="display:none">
+    
+    <!-- Tombol Export -->
+        <button id="exportAllBtn" class="btn btn-excel btn-modern px-4 py-2" disabled>
+        <i class="bi bi-file-spreadsheet"></i> Ekspor Excel
+        </button>
+</div>
+
     <!-- MAIN CONTAINER -->
     <div class="container-fluid px-3 px-lg-4 py-3">
         <!-- HEADER SECTION -->
